@@ -6,10 +6,11 @@ class Contact extends CI_Controller{
     }
     
     function index(){
-        $this->load->view('contact_view');
-	// load email and form helpers ** you can autoload them from config/autoload.php
+    	// load email and form helpers ** you can autoload them from config/autoload.php
 	$this->load->helper('email');
-	$this->load->helper('form'); 	
+	$this->load->helper('form'); 
+	
+        $this->load->view('contact_view');
     }
 
     function emailsender(){
